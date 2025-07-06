@@ -73,8 +73,12 @@ a {
 }
 
 /* Header */
-.header.fixed{
-    z-index: 1;
+.header {
+  background-color: #fff;
+}
+
+.header.fixed {
+  z-index: 1;
   position: sticky;
   top: -28px;
 }
@@ -119,7 +123,121 @@ a {
   padding: 12px 24px;
 }
 
-.header .action .active:hover{
-    background-color: var(--primary-color);
-    color:#fff ;
+.header .action .active:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  padding: 50px 0 79px;
+}
+
+.hero .body {
+  display: flex;
+}
+
+.hero .content-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.hero .text {
+  color: #767e7e;
+  font-size: 1.4rem;
+}
+
+.hero .heading {
+  margin-top: 18px;
+  width: 458px;
+  color: #0d1111;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 1.16; /* 116.129% */
+}
+
+.hero .desc {
+  width: 374px;
+  margin-top: 46px;
+  color: #9da6a5;
+  font-size: 1.8rem;
+  line-height: 1.78; /* 177.778% */
+}
+
+.hero .cta-group {
+  margin-top: 52px;
+  display: flex;
+  align-items: center;
+}
+
+.hero .cta-group .btn {
+  min-width: 186px;
+  height: 68px;
+}
+
+.hero .content-block .play-video {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d1111;
+  margin-left: 50px;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0px 22px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .media-block {
+  position: relative;
+  width: 50%;
+}
+
+.hero .media-block .avt {
+  object-fit: cover;
+  background: #dff6f5;
+  width: 576px;
+  height: 631px;
+}
+
+.hero-summary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  top: 149px;
+  left: -40px;
+  width: 157px;
+  height: 75px;
+  border-radius: 18px;
+  background: #fefefd;
+  box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .hero-summary::after {
+  position: absolute;
+  top: 45px;
+  left: 29px;
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 4px;
+  background: #fff;
+  border-radius: 999px;
+}
+
+.hero .hero-summary img {
+  width: 36px;
+  height: 40px;
+}
+
+.hero .hero-summary .info {
+  color: #0d1111;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 55px;
 }
