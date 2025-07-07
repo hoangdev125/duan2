@@ -584,10 +584,7 @@ a {
 
 .footer .row {
   display: flex;
-}
-
-.footer .column {
-  width: 20%;
+  justify-content: space-between;
 }
 
 .footer .column h3 {
