@@ -78,7 +78,7 @@ a {
 }
 
 .header.fixed {
-  z-index: 1;
+  z-index: 2;
   position: sticky;
   top: -28px;
 }
@@ -405,9 +405,12 @@ a {
   font-size: 1.4rem;
 }
 
-.courses .status p{
+.courses .status p {
   margin-top: 18px;
   margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .courses .status p::before {
@@ -418,4 +421,209 @@ a {
   height: 6px;
   border-radius: 50%;
   background: #1ebfc1;
+}
+
+/* Feedbacks */
+
+.feedback {
+  margin-top: 389px;
+}
+
+.countdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.feedback .countdown-item .heading {
+  height: 93px;
+  color: #0d1111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6.2rem;
+  font-weight: 700;
+}
+
+.feedback .countdown-item p {
+  text-align: center;
+  color: #767e7e;
+  font-size: 1.8rem;
+  margin-top: 11px;
+}
+
+.feedback .body {
+  margin-top: 264px;
+  display: flex;
+  position: relative;
+}
+
+.feedback .body .text {
+  width: 36%;
+}
+
+.feedback .text h2 {
+  margin-top: 27px;
+  color: #5d6564;
+  font-size: 3.2rem;
+  line-height: 1.5; /* 150% */
+}
+
+.feedback .text p {
+  margin-top: 33px;
+  color: #767e7e;
+  font-size: 1.6rem;
+}
+
+.feedback .text strong {
+  color: #070707;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.feedback .feedback-cta {
+  display: flex;
+  margin-top: 52px;
+}
+
+.feedback .cta-btn-group {
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--primary-color);
+}
+
+.feedback .cta-btn-group:hover {
+  opacity: 0.9;
+  border: 1px solid rgba(207, 20, 195, 0.219);
+}
+
+.feedback .avatar {
+  position: absolute;
+}
+
+.feedback .avt-1 {
+  left: 635px;
+  top: 0;
+  width: 92px;
+  height: 92px;
+}
+
+.feedback .avt-2 {
+  background-color: #1ebfc1;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  right: 0;
+  left: 1060px;
+  top: 19px;
+}
+
+.feedback .avt-3 {
+  background-color: #80a528;
+  border-radius: 50%;
+  width: 235px;
+  height: 235px;
+  top: 107px;
+  left: 764px;
+}
+
+.feedback .avt-4 {
+  background-color: #ad75a0;
+  border-radius: 50%;
+  top: 258px;
+  left: 491px;
+}
+
+.feedback .avt-5 {
+  background-color: #2b4f0d;
+  border-radius: 50%;
+  top: 403px;
+  left: 703px;
+}
+
+.feedback .avt-6 {
+  background-color: #def10a;
+  border-radius: 50%;
+  top: 374px;
+  left: 1060px;
+}
+
+/* Admit */
+.admit {
+  margin-top: 130px;
+  background: #def6f5;
+}
+
+.admit .body {
+  padding: 76px 141px 88px 135px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admit .info .desc {
+  color: #767e7e;
+  font-size: 1.8rem;
+  margin-top: 18px;
+}
+
+.admit .btn {
+  width: 186px;
+  height: 68px;
+}
+
+/* Footer */
+.footer {
+  padding-top: 131px;
+}
+
+.footer .row {
+  display: flex;
+}
+
+.footer .column {
+  width: 20%;
+}
+
+.footer .column h3 {
+  color: #2e2e2e;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.footer .column li {
+  margin-top: 18px;
+  color: #535353;
+  font-size: 1.6rem;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+
+}
+.footer li a {
+    margin-bottom: 16px;
+  color: #535353;
+  font-size: 1.6rem;
+}
+
+.column li img {
+  margin-right: 9px;
+  width: 11px;
+height: 9px;
+object-fit: cover;
+}
+
+.footer .copyright {
+  margin-top: 80px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: #b0b5b4;
+  font-size: 1.8rem;
+  line-height: normal;
 }
